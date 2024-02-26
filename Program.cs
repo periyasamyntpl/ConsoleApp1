@@ -9,6 +9,8 @@ namespace ThreadPoolApplication
         {
 
 
+
+
             for (int i = 0; i < 10; i++)
             {
                 Thread thread = new Thread(MyMethod)
@@ -25,6 +27,8 @@ namespace ThreadPoolApplication
             Thread thread = Thread.CurrentThread;
             string message = $"Background: {thread.IsBackground},Thread Name: {thread.Name}, Thread Pool: {thread.IsThreadPoolThread}, Thread ID: {thread.ManagedThreadId}";
             Console.WriteLine(message);
+
+
         }
     }
 }
