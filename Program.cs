@@ -9,7 +9,7 @@ namespace ThreadPoolApplication
         {
             for (int i = 0; i < 10; i++)
             {
-                #region thread
+                #region thread Object Creation
                 Thread thread = new Thread(MyMethod)
                 {
                     Name = "Thread" + i
