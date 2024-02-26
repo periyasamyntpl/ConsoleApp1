@@ -9,11 +9,13 @@ namespace ThreadPoolApplication
         {
             for (int i = 0; i < 10; i++)
             {
+                #region thread
                 Thread thread = new Thread(MyMethod)
                 {
                     Name = "Thread" + i
                 };
                 thread.Start();
+                #endregion
             }
             Console.Read();
         }
